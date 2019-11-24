@@ -33,4 +33,4 @@ hi CursorLine cterm=NONE ctermbg=darkred ctermfg=white
 
 set ffs=unix,dos,mac
 
-source .dracula.vim
+source ~/.vim/.dracula.vim
