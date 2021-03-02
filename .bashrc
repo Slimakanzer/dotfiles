@@ -104,4 +104,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias drun-amdgpu='sudo docker run -it --network=host --device=/dev/kfd --device=/dev/dri --ipc=host --group-add video --cap-add=SYS_PTRACE --security-opt seccomp=unconfined -v $HOME/git:/git'
+# Usage: drun-amdgpu image
+#        ./bootstrap.sh
+alias drun-amdgpu='sudo docker run -it --network=host --device=/dev/kfd --device=/dev/dri --ipc=host --group-add video --cap-add=SYS_PTRACE --security-opt seccomp=unconfined -v $HOME/git:/git -w /git/dotfiles'

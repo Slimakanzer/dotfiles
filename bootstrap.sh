@@ -8,7 +8,8 @@ ln -f -s $SOURCE_DIR/.bashrc ~/.bashrc
 
 mv --backup ~/.vimrc ~/.vimrc.old
 ln -f -s $SOURCE_DIR/.vimrc ~/.vimrc
-ln -f -s $SOURCE_DIR/.dracula.vim ~/.dracula.vim
+mkdir -p ~/.vim
+ln -f -s $SOURCE_DIR/.vim/.dracula.vim ~/.dracula.vim
 
 
 # instal vscode things
