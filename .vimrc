@@ -9,8 +9,7 @@ set number
 set nowrap
 set ruler
 set hlsearch
-set incsearch
-
+set cursorline
 set showmatch
 
 filetype plugin on
@@ -28,6 +27,10 @@ map <leader>tt :TlistToggle<cr>
 map <leader>ta :TlistAddFiles
 map <leader>tar :TlistAddFilesRecursive
 map <leader>tp :TlistShowPrototype
+
+" Center search results on the matching line
+map N Nzz
+map n nzz
 
 hi CursorLine cterm=NONE ctermbg=darkred ctermfg=white
 
