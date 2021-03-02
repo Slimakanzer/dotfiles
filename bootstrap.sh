@@ -24,9 +24,11 @@ mkdir -p "$VSCODE_SERVER_DIR" && \
 echo "Installing and setup vscode extensions ..."
 mkdir -p "$VSCODE_EXT_DIR" && \
         cp -ri $SOURCE_DIR/vscode/* "$VSCODE_EXT_DIR" && \
-        echo "Done vscode! Do not forget to install .vsix files located in $VSCODE_EXT_DIR"
+        echo "Done vscode!"
 
-echo << EOM
+cat << EOM
+
 Do not forget:
-        sudo usermod -aG groupname $USER
+        sudo usermod -aG groupname \`whoami\`
+        Install manually .vsix files located in $VSCODE_EXT_DIR
 EOM
