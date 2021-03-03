@@ -9,7 +9,7 @@ ln -f -s $SOURCE_DIR/.bashrc ~/.bashrc
 mv --backup ~/.vimrc ~/.vimrc.old
 ln -f -s $SOURCE_DIR/.vimrc ~/.vimrc
 mkdir -p ~/.vim
-ln -f -s $SOURCE_DIR/.vim/.dracula.vim ~/.dracula.vim
+ln -f -s $SOURCE_DIR/.dracula.vim ~/.vim/.dracula.vim
 
 
 # instal vscode things
@@ -30,6 +30,6 @@ mkdir -p "$VSCODE_EXT_DIR" && \
 cat << EOM
 
 Do not forget:
-        sudo usermod -aG groupname \`whoami\`
+        sudo usermod -aG docker \`whoami\`
         Install manually .vsix files located in $VSCODE_EXT_DIR
 EOM
