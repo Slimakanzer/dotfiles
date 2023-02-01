@@ -21,5 +21,6 @@ mkdir -p "$VSCODE_EXT_DIR" && \
 cat << EOM
 Do not forget:
         sudo usermod -aG docker \`whoami\`
+        source ~/.bashrc
         Install manually .vsix files located in $VSCODE_EXT_DIR
 EOM
